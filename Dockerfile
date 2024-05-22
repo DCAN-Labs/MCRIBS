@@ -42,7 +42,7 @@ RUN bash fixpy.sh /opt/MCRIBS/ > fixpy.log
 
 WORKDIR /usr/lib/x86_64-linux-gnu
 RUN cp libtbb.so.2 libtbbmalloc.so.2 libtbbmalloc_proxy.so.2 /opt/MCRIBS/lib
-RUN chmod +x /opt/MCRIBS/bin/*.sh
+RUN chmod +x /opt/MCRIBS/bin/*
 
 WORKDIR /work
 ENTRYPOINT ["/opt/setupMCRIBS.sh"]
