@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /opt
 # Build MCRIBS + dependencies through their build script
 # Installed dependencies: ITK, VTK, MIRTK
-RUN git clone --branch enh/medial-plane https://github.com/DCAN-Labs/MCRIBS_for_MAKEGI.git /opt/MCRIBS \
+RUN git clone --branch allow-isx-5050-boundary-force https://github.com/DCAN-Labs/MCRIBS_for_MAKEGI.git /opt/MCRIBS \
     && cd MCRIBS \
     && bash build.sh \
     # clean up and reduce size
